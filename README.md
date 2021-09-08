@@ -1,2 +1,2 @@
-# machinelearning-p
-Has the codes of ML models I've learned till date.
+# Machine Learning
+Hello! This repository houses the codes of all the ML models, I learned and explored till date.
