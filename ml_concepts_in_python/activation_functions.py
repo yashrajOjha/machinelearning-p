@@ -20,6 +20,13 @@ def softmax(x):
     numerator = np.exp(x - np.max(x, axis=axis, keepdims=True))
     return numerator/np.sum(numerator, axis=axis, keepdims=True)
 
+
+def log_softmax(scores: list) -> np.ndarray:
+    A = np.array(scores)
+    e_x = np.exp(A - np.max(A))
+    return np.log(e_x/np.sum(e_x))
+
+
 def tanh(x):
     """(e^x - e^-x)/(e^x + e^-x)"""
     np_x = np.array(x, dtype=np.float64)
